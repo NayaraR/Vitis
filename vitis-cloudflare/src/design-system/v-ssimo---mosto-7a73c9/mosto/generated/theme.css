@@ -1,0 +1,310 @@
+/* Gerado por scripts/sync-mosto.mjs a partir de mosto/source/. Não edite à mão. */
+
+@theme inline {
+  --color-surface-page: var(--color-surface-page);
+  --color-surface-subtle: var(--color-surface-subtle);
+  --color-surface-card: var(--color-surface-card);
+  --color-surface-popover: var(--color-surface-popover);
+  --color-surface-muted: var(--color-surface-muted);
+  --color-surface-emphasis: var(--color-surface-emphasis);
+  --color-surface-strong: var(--color-surface-strong);
+  --color-surface-overlay: var(--color-surface-overlay);
+  --color-surface-disabled: var(--color-surface-disabled);
+  --color-surface-inverse: var(--color-surface-inverse);
+  --color-text-strong: var(--color-text-strong);
+  --color-text-default: var(--color-text-default);
+  --color-text-muted: var(--color-text-muted);
+  --color-text-inverse: var(--color-text-inverse);
+  --color-text-disabled: var(--color-text-disabled);
+  --color-text-on-inverse: var(--color-text-on-inverse);
+  --color-text-on-inverse-muted: var(--color-text-on-inverse-muted);
+  --color-icon-strong: var(--color-icon-strong);
+  --color-icon-default: var(--color-icon-default);
+  --color-icon-subtle: var(--color-icon-subtle);
+  --color-border-subtle: var(--color-border-subtle);
+  --color-border-default: var(--color-border-default);
+  --color-border-strong: var(--color-border-strong);
+  --color-border-stronger: var(--color-border-stronger);
+  --color-border-contrast: var(--color-border-contrast);
+  --color-border-focus: var(--color-border-focus);
+  --color-border-on-inverse: var(--color-border-on-inverse);
+  --color-primary-default: var(--color-primary-default);
+  --color-primary-strong: var(--color-primary-strong);
+  --color-primary-text: var(--color-primary-text);
+  --color-primary-soft: var(--color-primary-soft);
+  --color-primary-subtle: var(--color-primary-subtle);
+  --color-cta-default: var(--color-cta-default);
+  --color-cta-strong: var(--color-cta-strong);
+  --color-cta-soft: var(--color-cta-soft);
+  --color-cta-subtle: var(--color-cta-subtle);
+  --color-accent-default: var(--color-accent-default);
+  --color-accent-strong: var(--color-accent-strong);
+  --color-accent-soft: var(--color-accent-soft);
+  --color-accent-subtle: var(--color-accent-subtle);
+  --color-destructive-default: var(--color-destructive-default);
+  --color-destructive-strong: var(--color-destructive-strong);
+  --color-destructive-soft: var(--color-destructive-soft);
+  --color-destructive-subtle: var(--color-destructive-subtle);
+  --color-success-default: var(--color-success-default);
+  --color-success-strong: var(--color-success-strong);
+  --color-success-soft: var(--color-success-soft);
+  --color-success-subtle: var(--color-success-subtle);
+  --color-alert-default: var(--color-alert-default);
+  --color-alert-strong: var(--color-alert-strong);
+  --color-alert-soft: var(--color-alert-soft);
+  --color-alert-subtle: var(--color-alert-subtle);
+  --color-informative-default: var(--color-informative-default);
+  --color-informative-strong: var(--color-informative-strong);
+  --color-informative-soft: var(--color-informative-soft);
+  --color-informative-subtle: var(--color-informative-subtle);
+  --color-premium-default: var(--color-premium-default);
+  --color-premium-strong: var(--color-premium-strong);
+  --color-premium-soft: var(--color-premium-soft);
+  --color-premium-subtle: var(--color-premium-subtle);
+  --color-rating-default: var(--color-rating-default);
+  --color-rating-empty: var(--color-rating-empty);
+  --color-chart-1: var(--color-chart-1);
+  --color-chart-2: var(--color-chart-2);
+  --color-chart-3: var(--color-chart-3);
+  --color-chart-4: var(--color-chart-4);
+  --color-chart-5: var(--color-chart-5);
+  --color-sidebar-background: var(--color-sidebar-background);
+  --color-sidebar-text: var(--color-sidebar-text);
+  --color-sidebar-text-muted: var(--color-sidebar-text-muted);
+  --color-sidebar-active: var(--color-sidebar-active);
+  --color-sidebar-active-text: var(--color-sidebar-active-text);
+  --color-sidebar-hover: var(--color-sidebar-hover);
+  --color-sidebar-accent-text: var(--color-sidebar-accent-text);
+  --color-sidebar-border: var(--color-sidebar-border);
+  --color-sidebar-focus: var(--color-sidebar-focus);
+  --color-topbar-background: var(--color-topbar-background);
+  --color-topbar-text: var(--color-topbar-text);
+  --color-topbar-text-muted: var(--color-topbar-text-muted);
+  --color-topbar-icon: var(--color-topbar-icon);
+  --color-topbar-border: var(--color-topbar-border);
+  --color-shadow-subtle: var(--color-shadow-subtle);
+  --color-shadow-default: var(--color-shadow-default);
+  --radius-none: var(--radius-none);
+  --radius-2xs: var(--radius-2xs);
+  --radius-xs: var(--radius-xs);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --radius-2xl: var(--radius-2xl);
+  --radius-3xl: var(--radius-3xl);
+  --radius-4xl: var(--radius-4xl);
+  --radius-full: var(--radius-full);
+  --radius-button: var(--radius-button);
+  --radius-input: var(--radius-input);
+  --radius-card: var(--radius-card);
+  --radius-tab: var(--radius-tab);
+  --radius-tag: var(--radius-tag);
+  --radius-item: var(--radius-item);
+  --shadow-2xs: var(--shadow-2xs);
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+  --shadow-2xl: var(--shadow-2xl);
+  --shadow-up: var(--shadow-up);
+  --shadow-focus-ring: var(--focus-ring);
+  --shadow-focus-ring-error: var(--focus-ring-error);
+  --shadow-focus-ring-sidebar: var(--focus-ring-sidebar);
+  --font-heading: var(--font-heading);
+  --font-subheading: var(--font-subheading);
+  --font-body: var(--font-body);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+  --font-sans: var(--font-body);
+  --font-weight-heading-bold: var(--font-weight-heading-bold);
+  --font-weight-heading-semibold: var(--font-weight-heading-semibold);
+  --font-weight-subheading: var(--font-weight-subheading);
+  --font-weight-body-semibold: var(--font-weight-body-semibold);
+}
+
+@utility text-display-large {
+  font-family: var(--font-heading);
+  font-size: 96px;
+  line-height: 96px;
+  font-weight: var(--font-weight-heading-bold);
+  text-transform: var(--heading-text-transform);
+}
+
+@utility text-display {
+  font-family: var(--font-heading);
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: var(--font-weight-heading-bold);
+  text-transform: var(--heading-text-transform);
+}
+
+@utility text-heading-1 {
+  font-family: var(--font-heading);
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: var(--font-weight-heading-bold);
+  text-transform: var(--heading-text-transform);
+}
+
+@utility text-heading-1-mobile {
+  font-family: var(--font-heading);
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: var(--font-weight-heading-bold);
+  text-transform: var(--heading-text-transform);
+}
+
+@utility text-heading-2 {
+  font-family: var(--font-heading);
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: var(--font-weight-heading-semibold);
+  text-transform: var(--heading-text-transform);
+}
+
+@utility text-heading-3 {
+  font-family: var(--font-subheading);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: var(--font-weight-subheading);
+}
+
+@utility text-heading-4 {
+  font-family: var(--font-subheading);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: var(--font-weight-subheading);
+}
+
+@utility text-paragraph-large-regular {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+@utility text-paragraph-large-medium {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+@utility text-paragraph-large-bold {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: var(--font-weight-body-semibold);
+}
+
+@utility text-paragraph-large-regular-uppercase {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@utility text-paragraph-regular {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@utility text-paragraph-medium {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+@utility text-paragraph-bold {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: var(--font-weight-body-semibold);
+}
+
+@utility text-paragraph-regular-uppercase {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@utility text-paragraph-small-regular {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+@utility text-paragraph-small-medium {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+@utility text-paragraph-small-bold {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: var(--font-weight-body-semibold);
+}
+
+@utility text-paragraph-small-regular-uppercase {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@utility text-paragraph-mini-regular {
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+@utility text-paragraph-mini-medium {
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+@utility text-paragraph-mini-bold {
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: var(--font-weight-body-semibold);
+}
+
+@utility text-paragraph-mini-regular-uppercase {
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@utility text-caption {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+}
+
+@utility text-display-script {
+  font-family: var(--font-display);
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 400;
+}

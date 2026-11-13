@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1794431614045,
+      "tag": "0000_vitis_core",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1794431675539,
+      "tag": "0001_vitis_storage_and_seed",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1794433022479,
+      "tag": "0002_collections_covers_reads",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1794433591939,
+      "tag": "0003_brand_and_systems",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1794434160481,
+      "tag": "0004_cultivo_trails_teams_support",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1794480448482,
+      "tag": "0005_support_portal_274_systems_easy_assist",
+      "breakpoints": true
+    }
+  ]
+}

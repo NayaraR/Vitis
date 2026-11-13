@@ -1,0 +1,96 @@
+@import "tw-animate-css";
+
+/* Mosto: tokens das 6 combinações marca × tema, utilitários do Tailwind e estilos dos componentes.
+ * Tudo em src/mosto/generated é gerado por scripts/sync-mosto.mjs: não edite à mão. */
+@import "./mosto/generated/tokens.css";
+@import "./mosto/generated/theme.css";
+@import "./mosto/generated/components.css";
+
+/* Marca e tema vêm de data-brand (vissimo | grandcru | evino) e data-theme (light | dark),
+ * normalmente no <html>. O variante dark: do Tailwind segue o data-theme. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/*
+ * Tema do shadcn/ui apontando para os tokens do Mosto.
+ *
+ * Os nomes do shadcn (bg-background, text-foreground, bg-primary, border-border…) continuam
+ * funcionando, mas cada um é um token semântico do Mosto e troca com a marca e o tema.
+ * Não coloque cores soltas aqui: se faltar um papel, ele precisa existir no Mosto primeiro.
+ */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* Repetido em cada escopo de marca/tema para que um data-brand ou data-theme aninhado
+ * também troque as cores do shadcn. */
+:root,
+[data-brand],
+[data-theme] {
+  --radius: var(--radius-card);
+  --background: var(--color-surface-page);
+  --foreground: var(--color-text-default);
+  --card: var(--color-surface-card);
+  --card-foreground: var(--color-text-default);
+  --popover: var(--color-surface-popover);
+  --popover-foreground: var(--color-text-default);
+  --primary: var(--color-primary-default);
+  --primary-foreground: var(--color-text-inverse);
+  --secondary: var(--color-primary-subtle);
+  --secondary-foreground: var(--color-primary-strong);
+  --muted: var(--color-surface-muted);
+  --muted-foreground: var(--color-text-muted);
+  --accent: var(--color-surface-muted);
+  --accent-foreground: var(--color-text-strong);
+  --destructive: var(--color-destructive-default);
+  --destructive-foreground: var(--color-text-inverse);
+  --border: var(--color-border-default);
+  --input: var(--color-border-default);
+  --ring: var(--color-border-focus);
+  --sidebar: var(--color-sidebar-background);
+  --sidebar-foreground: var(--color-sidebar-text);
+  --sidebar-primary: var(--color-sidebar-active);
+  --sidebar-primary-foreground: var(--color-sidebar-active-text);
+  --sidebar-accent: var(--color-sidebar-hover);
+  --sidebar-accent-foreground: var(--color-sidebar-text);
+  --sidebar-border: var(--color-sidebar-border);
+  --sidebar-ring: var(--color-sidebar-focus);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+  }
+}

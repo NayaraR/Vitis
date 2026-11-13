@@ -1,0 +1,3 @@
+- [x] Support portal URL default → /portal/274 (migration + existing row)
+- [x] Remove SAP (relink examples to VarejoFácil), add Easy Assist + draft trail, org kind restaurant
+- [x] Verify Cultivo reorganization end-to-end; fix build/type errors
